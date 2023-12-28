@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronome App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/shadcn-ui/dist/shadcn-ui.min.js"></script>
+</head>
+<body>
+    <div id="app-container">
+        <div id="beat-container" class="beat-container"></div>
+        <div class="controls">
+            <button id="start-stop-button" class="start-stop-button">Start / Stop</button>
+            <label for="tempo-selector">Tempo (BPM):</label>
+            <input type="range" id="tempo-selector" min="20" max="600" value="120">
+            <label for="default-sound-selector">Default Sound:</label>
+            <select id="default-sound-selector">
+                <option value="default">Default Beep</option>
+            </select>
+        </div>
+    </div>
+    <script src="js/metronome.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/storage.js"></script>
+</body>
+</html>
